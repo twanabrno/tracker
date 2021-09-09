@@ -1,0 +1,509 @@
+:root {
+    --brandColor: #8c85d4;
+    --lightblue: #80D9FE;
+    --lightpurple: #ca8fe8;
+    --lightgreen: #ABFD97;
+}
+
+.lang-btn {
+    font-size: small;
+    padding: 1px 5px;
+    background-color: unset;
+    border: unset;
+}
+
+.lang-btn:hover {
+
+    background-color: unset;
+}
+
+.upperBar .show .lang-btn,
+.upperBar .dropdown .lang-btn {
+    background-color: unset;
+    box-shadow: 0 0 0 0.10rem rgb(255 255 255 / 50%) !important;
+}
+
+.lang-icon {
+    width: 20px;
+}
+
+h1 {
+    font-family: "MolsaqArabicExtraBold";
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+}
+
+h2 {
+    font-family: "MolsaqArabicExtraBold";
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    font-family: '69_Sarchia_Omar';
+    line-height: 35px;
+}
+
+.hr {
+    border: unset;
+    background-color: var(--brandColor) !important;
+    border-top: 4px solid var(--brandColor);
+    width: 60px !important;
+    margin: 0 !important;
+    opacity: unset;
+    text-align: center !important;
+}
+
+/* Upper Bar */
+.upperBar {
+    font-size: small;
+    padding: 2px 0;
+    background-color: var(--brandColor);
+    color: white;
+    font-size: 15px;
+}
+
+.upperBar .social a {
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.upperBar .social a:hover {
+    color: white;
+}
+
+.nav-bar .navlink {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.nav-bar {
+    margin-top: 28px;
+    padding: 13px 0 10px;
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+.nav-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navbar h2 {
+    margin: auto 0 auto;
+}
+
+.dropdown {
+    z-index: 1000 !important;
+}
+
+.download-btn,
+.subscribe-btn {
+    background-color: var(--brandColor);
+    border-color: var(--brandColor);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s
+}
+
+.download-btn:hover,
+.subscribe-btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: var(--brandColor);
+    color: var(--brandColor);
+}
+
+/* Home */
+#home {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url(https://cdn.pickuplimes.com/cache/fd/ea/fdeac849c97f26cac33cf856f5e047d0.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#home .overlay {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#home h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#home .intro-text {
+    padding-top: 280px;
+    padding-bottom: 175px;
+    text-align: center;
+}
+
+/* About */
+#about {
+    padding: 130px 0 50px;
+}
+
+#about .about-header1 {
+    color: var(--brandColor);
+    text-transform: uppercase;
+    font-family: "MolsaqArabicExtraBold";
+    font-weight: 600px;
+}
+
+#about .about-header2 {
+    text-transform: uppercase;
+}
+
+#about h6 {
+    color: #1089ff;
+}
+
+/* Why Choose Us */
+#whychooseus {
+    padding: 0px 60px 50px;
+}
+
+#whychooseus img {
+    width: 65%;
+}
+
+.background {
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Our Services */
+#features {
+    padding: 110px 0 60px;
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#features .feature-item {
+    padding: 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+}
+
+#features .featuresicon {
+    font-size: 60px;
+}
+
+#features h4 {
+    text-transform: capitalize;
+    font-family: 'MolsaqArabicExtraBold';
+}
+
+#features p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* FAQ */
+#faq {
+    padding: 110px 0 75px;
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#faq .faq-title {
+    display: unset;
+    text-align: center !important;
+}
+
+#faq .faq-row {
+    border: unset;
+    margin-bottom: 9px;
+    background-color: #F1F6FA;
+
+}
+
+#faq .faq-row .row-content-text {
+    font-size: 14px;
+    padding: 10px 10px;
+    text-transform: inherit;
+    font-weight: 300;
+    line-height: 20px;
+    font-family: "69_Sarchia_Omar";
+    padding-bottom: 20px;
+}
+
+#faq .row-title {
+    font-family: "MolsaqArabicExtraBold";
+    padding: 10px 10px;
+    font-weight: 900;
+    text-transform: inherit;
+}
+
+#faq p {
+    margin-bottom: 0 !important;
+}
+
+/* testimonials */
+#testimonial {
+    padding: 100px 0;
+    text-align: center !important;
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#testimonial .item {
+    background-color: white;
+    padding: 66px 32px 77px 32px;
+}
+
+#testimonial h3,
+#testimonial h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'MolsaqArabicExtraBold';
+}
+
+#testimonial .owl-stage .owl-item img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+#testimonial p {
+    line-height: 38px;
+    font-size: 18px;
+    color: #6e6e6e;
+}
+
+#testimonial span {
+    font-size: 15px;
+    font-family: 'MolsaqArabicExtraBold';
+    text-transform: uppercase;
+}
+
+/* Download */
+#download {
+    padding: 110px 0 50px;
+    background-image: url(http://webdesign-finder.com/kruton/wp-content/uploads/2018/11/background-form.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#download .d-icon {
+    font-size: 100px;
+    margin-bottom: 75px;
+}
+
+#download .appgalleryCard {
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 75px 0;
+    margin: 0 25px;
+    border: 1px solid rgb(220, 53, 69, 0);
+    transition: all 0.2s
+}
+
+#download .androidCard {
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 75px 0;
+    margin: 0 25px;
+    border: 1px solid rgb(106, 220, 133, 0);
+    transition: all 0.2s
+}
+
+#download .iosCard {
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 75px 0;
+    margin: 0 25px;
+    border: 1px solid rgb(0, 0, 0, 0);
+    transition: all 0.2s
+}
+
+#download .appgalleryCard:hover {
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border: 1px solid rgb(220, 53, 69);
+}
+
+#download .androidCard:hover {
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border: 1px solid rgb(106, 220, 133);
+}
+
+#download .iosCard:hover {
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#download .appgalleryIcon {
+    border-color: rgb(220, 53, 69);
+    color: #DC3545;
+}
+
+#download .appgalleryIcon:hover {
+    background-color: #DC3545;
+    color: white;
+}
+
+#download .androidIcon {
+    border-color: #6BDC85;
+    color: #6BDC85;
+}
+
+#download .androidIcon:hover {
+    background-color: #6BDC85;
+    color: white;
+}
+
+#download .iosIcon {
+    border-color: black;
+    color: black;
+}
+
+#download .iosIcon:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Subscribe */
+#subscribe {
+    color: white;
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#subscribe .hr {
+    color: var(--brandColor);
+    border-color: var(--brandColor);
+}
+
+#subscribe .overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#subscribe .container {
+    padding: 40px 0 25px;
+}
+
+#subscribe h2 {
+    color: black;
+}
+
+#subscribe .card {
+    color: black !important;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#subscribe .card:hover {
+    box-shadow: rgba(255, 255, 255, 0.9) 0px 7px 29px 0px;
+
+}
+
+#subscribe .card button {
+    padding: 10px 15px;
+    background-color: var(--brandColor);
+    border-color: var(--brandColor);
+}
+
+#subscribe .card button:hover {
+    background-color: white;
+    color: var(--brandColor);
+}
+
+#subscribe .card-title {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#subscribe li {
+    font-family: '69_Sarchia_Omar' !important;
+    font-size: 14px;
+}
+
+#subscribe .fly-img {
+    width: 60%;
+}
+
+#subscribe .plan-hr {
+    margin: auto !important;
+    width: 65%;
+    background-color: black !important;
+    opacity: unset;
+}
+
+#subscribe .price {
+    margin: 20px 0 50px;
+    font-size: 18px;
+}
+
+#subscribe .price span {
+    font-weight: bold;
+    margin: 0 4px;
+    font-size: 30px;
+}
+
+
+/* Footer */
+#footer {
+    padding: 100px 0 0;
+    line-height: 35px;
+    background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer .fotter-social {
+    margin: 50px 20px;
+    padding: 12px;
+    font-size: 50px;
+    color: var(--brandColor);
+    border: 1px solid var(--brandColor);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+#footer .fotter-social:hover {
+    background-color: var(--brandColor);
+    color: white;
+}
+
+#footer a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(77, 76, 76);
+    font-weight: 500px;
+
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: black;
+
+}
