@@ -53,6 +53,9 @@ body {
     .background{
         background-size: auto  150%  !important;
     }
+    #download {
+        background-size: 300% 100% !important;
+    }
 
     #download .appgalleryCard,
     #download .androidCard,
@@ -69,7 +72,9 @@ body {
         font-size: 13px;
         width: 90px !important;
     }
-
+    #footer{
+        padding-bottom: 10px !important;
+    }
     #footer .fotter-social {
         margin: 30px 20px !important;
     }
@@ -91,7 +96,7 @@ body {
         font-size: 40px !important;
     }
     .background{
-        background-size: auto  100%  !important;
+        background-size: auto  150%  !important;
     }
 
     #download .appgalleryCard,

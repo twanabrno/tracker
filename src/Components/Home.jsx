@@ -10,7 +10,7 @@ const Home = () => {
     <div id="home">
       <div className="overlay">
         <Container className="px-md-5">
-          <Col lg={7}>
+          <Col md={7}>
             <div md={8} className="intro-text">
               <Flip top cascade>
                 <h1>{t("home_title")}</h1>

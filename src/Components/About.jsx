@@ -36,7 +36,7 @@ const About = () => {
                   </h6>
                 </Jump>
                 <Slide left cascade>
-                  <h3 className="about-header2 mb-5">{t("about_h")} </h3>
+                  <h3 className="about-header2 mb-3 mb-md-4 mb-lg-5">{t("about_h")} </h3>
                 </Slide>
                 <Zoom cascade>
                   <p className="about-p ">{t("about_p")}</p>

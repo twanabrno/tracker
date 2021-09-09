@@ -28,7 +28,7 @@ const Features = () => {
                   <Col sm={2} className="text-center p-2">
                     <MdFeaturedPlayList
                       className="featuresicon"
-                      style={{ color: "ca8fe8" }}
+                      style={{ color: "#ca8fe8" }}
                     />
                   </Col>
                   <Col className="text-center text-md-start">
@@ -46,7 +46,7 @@ const Features = () => {
                   <Col sm={2} className="text-center p-2">
                     <MdFeaturedPlayList
                       className="featuresicon"
-                      style={{ color: "80D9FE" }}
+                      style={{ color: "#80D9FE" }}
                     />
                   </Col>
                   <Col className="text-center text-md-start">
@@ -82,7 +82,7 @@ const Features = () => {
                   <Col sm={2} className="text-center p-2">
                     <MdFeaturedPlayList
                       className="featuresicon"
-                      style={{ color: "8c85d4" }}
+                      style={{ color: "#8c85d4" }}
                     />
                   </Col>
                   <Col className="text-center text-md-start">

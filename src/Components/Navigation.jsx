@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import cookies from "js-cookie";
-import { Button, Dropdown, Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Dropdown, Container, Nav, Navbar, Row } from "react-bootstrap";
 import { GrFacebook, GrInstagram } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
+import logo from "../Assets/img/logo.jpg";
 import kur from "../Assets/img/ku.svg";
 import ar from "../Assets/img/ar.svg";
 import en from "../Assets/img/en.svg";
@@ -42,7 +43,7 @@ const Navigation = () => {
       setPt("nav-shadow");
     } else {
       setBg("");
-      setPt("pt-5");
+      setPt("pt-4");
     }
   };
 
@@ -137,11 +138,16 @@ const Navigation = () => {
         expand="lg"
         className={` ${pt} fixed-top nav-bar`}
       >
-        <Container className="py-0">
-          <Zoom>
-            <Navbar.Brand href="#home">{t("app_title")}</Navbar.Brand>
-          </Zoom>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Container className="py-0 ">
+            <div className='d-flex align-items-end justify-content-between mx-0'>
+            <Navbar.Brand href="#home" className="m-0">
+                <img className="img-fluid logo" src={logo} alt="" />
+                <span className="align-bottom mx-2 text-uppercase fs-4 ">
+                  {t('app_title')}
+                </span>
+            </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav p-0"/>
+            </div>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Fade top cascade>

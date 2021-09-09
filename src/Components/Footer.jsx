@@ -9,17 +9,26 @@ import Fade from "react-reveal/Fade";
 import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
 
+import logo from "../Assets/img/logo.jpg";
+
 const Footer = () => {
   const { t } = useTranslation();
   return (
     <div id="footer">
       <Container>
-        <Flip top cascade>
-          <h2>{t("app_title")}</h2>
-        </Flip>
-        <Zoom>
-          <hr className="hr" />
-        </Zoom>
+        <div className='d-flex align-items-end justify-content-start'>
+        <img src={logo} className="logo img-fluid" alt="" />
+        <span className="mb-2 mx-3">
+          <h2>
+            <Flip top cascade>
+              {t("app_title")}
+            </Flip>
+          </h2>
+          <Zoom>
+            <hr className="hr" />
+          </Zoom>
+        </span>
+        </div>
         <Row>
           <Col lg={5} className="mb-5 mb-lg-0">
             <Fade left cascade>
@@ -37,11 +46,11 @@ const Footer = () => {
             </Zoom>
           </Col>
           <Col lg={1}></Col>
-          <Col lg={2} xs={6}  className="mb-5 mb-md-0 p-0">
+          <Col lg={2} xs={6} className="mb-5 mb-md-0 px-3">
             <Pulse>
               <h4>{t("usefull_links")}</h4>
             </Pulse>
-            <ul className="list-unstyled mx-2 mt-3 mt-lg-5">
+            <ul className="list-unstyled mt-3 mt-lg-5">
               <li>
                 <a href="#home">{t("home")}</a>
               </li>
@@ -62,7 +71,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={4} xs={6} className="contact ">
+          <Col lg={4} xs={6} className="contact p-0">
             <Pulse>
               <h4>{t("have_questions")}</h4>
             </Pulse>
@@ -76,7 +85,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <div className='text-center copy-right'>&copy; {t("copy_right")}</div>
+        <div className="text-center copy-right">&copy; {t("copy_right")}</div>
       </Container>
     </div>
   );

@@ -27,7 +27,7 @@ const Subscribe = () => {
             </div>
           </Zoom>
           <Row>
-            <Col md={7} className="d-flex justify-content-center">
+            <Col lg={7} className="d-flex justify-content-center">
               <Card style={{ width: "20rem" }}>
                 <Card.Body className="p-0 m-0">
                   <Card.Title className="text-center">
@@ -76,7 +76,7 @@ const Subscribe = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={5} className="d-flex justify-content-center text-center">
+            <Col md={5} className="d-flex justify-content-center text-center d-none d-lg-block">
               <div>
                 <Rotate top right>
                   <img

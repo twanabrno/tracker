@@ -1,5 +1,6 @@
 :root {
-    --brandColor: #8c85d4;
+    --brandgreen:#6DAF17;
+    --brandpurple: #6DAF17;
     --lightblue: #80D9FE;
     --lightpurple: #ca8fe8;
     --lightgreen: #ABFD97;
@@ -13,7 +14,6 @@
 }
 
 .lang-btn:hover {
-
     background-color: unset;
 }
 
@@ -47,8 +47,8 @@ p {
 
 .hr {
     border: unset;
-    background-color: var(--brandColor) !important;
-    border-top: 4px solid var(--brandColor);
+    background-color: var(--brandpurple) !important;
+    border-top: 4px solid var(--brandpurple);
     width: 60px !important;
     margin: 0 !important;
     opacity: unset;
@@ -59,7 +59,7 @@ p {
 .upperBar {
     font-size: small;
     padding: 2px 0;
-    background-color: var(--brandColor);
+    background-color: var(--brandpurple);
     color: white;
     font-size: 15px;
 }
@@ -83,7 +83,7 @@ p {
 
 .nav-bar {
     margin-top: 28px;
-    padding: 13px 0 10px;
+    padding: 10px 0 5px;
     transition: all 0.4s;
     z-index: 100;
 }
@@ -92,8 +92,8 @@ p {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.navbar h2 {
-    margin: auto 0 auto;
+.logo{
+    width: 12%;
 }
 
 .dropdown {
@@ -102,8 +102,8 @@ p {
 
 .download-btn,
 .subscribe-btn {
-    background-color: var(--brandColor);
-    border-color: var(--brandColor);
+    background-color: var(--brandpurple);
+    border-color: var(--brandpurple);
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.2s
@@ -112,8 +112,8 @@ p {
 .download-btn:hover,
 .subscribe-btn:hover {
     background-color: rgba(255, 255, 255, 0.7);
-    border-color: var(--brandColor);
-    color: var(--brandColor);
+    border-color: var(--brandpurple);
+    color: var(--brandpurple);
 }
 
 /* Home */
@@ -142,7 +142,7 @@ p {
 }
 
 #home p {
-    font-weight: 400;
+    font-weight: 600;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -159,7 +159,7 @@ p {
 }
 
 #about .about-header1 {
-    color: var(--brandColor);
+    color: var(--brandpurple);
     text-transform: uppercase;
     font-family: "MolsaqArabicExtraBold";
     font-weight: 600px;
@@ -401,8 +401,8 @@ p {
 }
 
 #subscribe .hr {
-    color: var(--brandColor);
-    border-color: var(--brandColor);
+    color: var(--brandpurple);
+    border-color: var(--brandpurple);
 }
 
 #subscribe .overlay {
@@ -430,14 +430,14 @@ p {
 
 #subscribe .card button {
     padding: 10px 15px;
-    background-color: var(--brandColor);
-    border-color: var(--brandColor);
+    background-color: var(--brandpurple);
+    border-color: var(--brandpurple);
     text-transform: uppercase;
 }
 
 #subscribe .card button:hover {
     background-color: white;
-    color: var(--brandColor);
+    color: var(--brandpurple);
 }
 
 #subscribe .card-title {
@@ -485,14 +485,14 @@ p {
     margin: 50px 20px;
     padding: 12px;
     font-size: 50px;
-    color: var(--brandColor);
-    border: 1px solid var(--brandColor);
+    color: var(--brandpurple);
+    border: 1px solid var(--brandpurple);
     border-radius: 50px;
     transition: all 0.5s;
 }
 
 #footer .fotter-social:hover {
-    background-color: var(--brandColor);
+    background-color: var(--brandpurple);
     color: white;
 }
 
