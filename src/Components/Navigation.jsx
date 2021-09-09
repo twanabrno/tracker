@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import cookies from "js-cookie";
-import { Button, Dropdown, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Button, Dropdown, Container, Nav, Navbar } from "react-bootstrap";
 import { GrFacebook, GrInstagram } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa";
 import Zoom from "react-reveal/Zoom";
@@ -31,19 +31,19 @@ const languages = [
 ];
 
 const Navigation = () => {
-  const [bg, setBg] = useState("");
-  const [pt, setPt] = useState("");
+  const [navBg, setNavBg] = useState("");
+  const [navPt, setNavPt] = useState("");
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation();
 
   const changeBg = () => {
     if (window.scrollY >= 100) {
-      setBg("white");
-      setPt("nav-shadow");
+      setNavBg("white");
+      setNavPt("nav-shadow");
     } else {
-      setBg("");
-      setPt("pt-4");
+      setNavBg("");
+      setNavPt("pt-4");
     }
   };
 
@@ -133,13 +133,12 @@ const Navigation = () => {
         </Container>
       </div>
       <Navbar
-        bg={bg}
+        bg={navBg}
         collapseOnSelect
         expand="lg"
-        className={` ${pt} fixed-top nav-bar`}
+        className={` ${navPt} fixed-top nav-bar`}
       >
         <Container className="py-0 ">
-            <div className='d-flex align-items-end justify-content-between mx-0'>
             <Navbar.Brand href="#home" className="m-0">
                 <img className="img-fluid logo" src={logo} alt="" />
                 <span className="align-bottom mx-2 text-uppercase fs-4 ">
@@ -147,7 +146,6 @@ const Navigation = () => {
                 </span>
             </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav p-0"/>
-            </div>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
               <Fade top cascade>

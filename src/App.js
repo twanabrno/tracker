@@ -5,7 +5,6 @@ import "./Assets/Style.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Features from "./Components/Features";
-import WhyChooseUs from "./Components/WhyChooseUs";
 import FAQ from "./Components/FAQ";
 import Testimonial from "./Components/Testimonial";
 import Footer from "./Components/Footer";

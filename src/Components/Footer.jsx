@@ -36,10 +36,10 @@ const Footer = () => {
             </Fade>
             <Zoom top>
               <div className="mx-md-5">
-                <a href="">
+                <a href="/">
                   <FaFacebookF className="fotter-social" />
                 </a>
-                <a href="">
+                <a href="/">
                   <FiInstagram className="fotter-social" />
                 </a>
               </div>
