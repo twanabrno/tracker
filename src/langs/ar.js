@@ -65,5 +65,6 @@ export default {
     usefull_links: "links",
     service: "service",
     have_questions: "Have any Questions?",
+    copy_right: "All Right reserved to Tracker",
   },
 };

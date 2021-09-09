@@ -30,10 +30,7 @@ const FAQ = () => {
         title: t("q_5"),
         content: t("a_5"),
       },
-      {
-        title: t("q_6"),
-        content: t("a_6"),
-      },
+      
     ],
   };
 

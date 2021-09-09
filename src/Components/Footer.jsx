@@ -21,7 +21,7 @@ const Footer = () => {
           <hr className="hr" />
         </Zoom>
         <Row>
-          <Col lg={5} className="mb-5">
+          <Col lg={5} className="mb-5 mb-lg-0">
             <Fade left cascade>
               <p className="mt-3 mt-lg-5">{t("footer_p")}</p>
             </Fade>
@@ -37,7 +37,7 @@ const Footer = () => {
             </Zoom>
           </Col>
           <Col lg={1}></Col>
-          <Col lg={2} xs={6} className="mb-5">
+          <Col lg={2} xs={6}  className="mb-5 mb-md-0 p-0">
             <Pulse>
               <h4>{t("usefull_links")}</h4>
             </Pulse>
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={4} xs={12} className="contact">
+          <Col lg={4} xs={6} className="contact ">
             <Pulse>
               <h4>{t("have_questions")}</h4>
             </Pulse>
@@ -76,6 +76,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <div className='text-center copy-right'>&copy; {t("copy_right")}</div>
       </Container>
     </div>
   );

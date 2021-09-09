@@ -15,7 +15,7 @@
 
 html,
 body {
-    font-family: "rudawregular2",  !important;
+    font-family: ""  !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,6 +49,9 @@ body {
 
     .navbar-toggler {
         font-size: 1rem !important;
+    }
+    .background{
+        background-size: auto  150%  !important;
     }
 
     #download .appgalleryCard,
@@ -86,6 +89,9 @@ body {
 
     #home h1 {
         font-size: 40px !important;
+    }
+    .background{
+        background-size: auto  100%  !important;
     }
 
     #download .appgalleryCard,

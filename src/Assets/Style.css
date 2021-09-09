@@ -185,7 +185,7 @@ p {
 .background {
     background-image: url(https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg6.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 /* Our Services */
@@ -201,6 +201,7 @@ p {
     border-radius: 4px;
     -webkit-box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #features .featuresicon {
@@ -222,8 +223,7 @@ p {
 #faq {
     padding: 110px 0 75px;
     background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: inherit;
 }
 
 #faq .faq-title {
@@ -303,7 +303,6 @@ p {
 #download {
     padding: 110px 0 50px;
     background-image: url(http://webdesign-finder.com/kruton/wp-content/uploads/2018/11/background-form.jpg);
-
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -319,7 +318,8 @@ p {
     padding: 75px 0;
     margin: 0 25px;
     border: 1px solid rgb(220, 53, 69, 0);
-    transition: all 0.2s
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #download .androidCard {
@@ -328,7 +328,8 @@ p {
     padding: 75px 0;
     margin: 0 25px;
     border: 1px solid rgb(106, 220, 133, 0);
-    transition: all 0.2s
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #download .iosCard {
@@ -337,7 +338,8 @@ p {
     padding: 75px 0;
     margin: 0 25px;
     border: 1px solid rgb(0, 0, 0, 0);
-    transition: all 0.2s
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #download .appgalleryCard:hover {
@@ -430,6 +432,7 @@ p {
     padding: 10px 15px;
     background-color: var(--brandColor);
     border-color: var(--brandColor);
+    text-transform: uppercase;
 }
 
 #subscribe .card button:hover {
@@ -452,15 +455,14 @@ p {
 }
 
 #subscribe .plan-hr {
-    margin: auto !important;
     width: 65%;
-    background-color: black !important;
     opacity: unset;
 }
 
 #subscribe .price {
     margin: 20px 0 50px;
-    font-size: 18px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 #subscribe .price span {
@@ -506,4 +508,9 @@ p {
     text-decoration: none;
     color: black;
 
+}
+#footer .copy-right{
+    border-top: 1px solid black;
+    text-transform: capitalize;
+    padding: 10px;
 }
