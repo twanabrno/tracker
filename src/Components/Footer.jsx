@@ -6,7 +6,6 @@ import { FiInstagram } from "react-icons/fi";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 
 import logo from "../Assets/img/logo.jpg";
 
@@ -18,14 +17,11 @@ const Footer = () => {
         <div className='d-flex align-items-end justify-content-start'>
         <img src={logo} className="logo img-fluid" alt="" />
         <span className="mb-2 mx-3">
-          <h1 className='mb-0'>
+          <h2 className='mb-0'>
             <Flip top >
               {t("app_title")}
             </Flip>
-          </h1>
-          <Zoom>
-            <hr className="hr" />
-          </Zoom>
+          </h2>
         </span>
         </div>
         <Row>
@@ -46,9 +42,9 @@ const Footer = () => {
           </Col>
           <Col lg={2} xs={6} className="mb-1 mb-md-0 px-3">
             <Fade>
-              <h3>{t("usefull_links")}</h3>
+              <h5>{t("usefull_links")}</h5>
             </Fade>
-            <ul className="list-unstyled mt-2">
+            <ul className="list-unstyled mt-2 px-0">
               <li>
                 <a href="#home">{t("home")}</a>
               </li>
@@ -64,14 +60,11 @@ const Footer = () => {
               <li>
                 <a href="#download">{t("download")}</a>
               </li>
-              <li>
-                <a href="#subscribe">{t("subscribe")}</a>
-              </li>
             </ul>
           </Col>
           <Col lg={4} xs={6} className="contact p-0">
             <Fade>
-              <h3>{t("have_questions")}</h3>
+              <h5>{t("have_questions")}</h5>
             </Fade>
             <div className="mt-2">
               <MdEmail />

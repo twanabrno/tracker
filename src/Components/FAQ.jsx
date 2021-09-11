@@ -7,7 +7,7 @@ import Zoom from "react-reveal/Zoom";
 
 const FAQ = () => {
   const { t } = useTranslation();
-  const data_1 = {
+  const data = {
     rows: [
       {
         title: t("q_1"),
@@ -40,7 +40,7 @@ const FAQ = () => {
           <Col lg={6} className="px-lg-5">
             <div className="header mx-4">
               <Fade>
-                <h1 className='mb-1'>FAQ</h1>
+                <h3 className='mb-2'>{t("faq")}</h3>
               </Fade>
               <Zoom>
                 <div className="mb-4">
@@ -49,7 +49,7 @@ const FAQ = () => {
               </Zoom>
             </div>
             <Fade >
-              <Faq data={data_1} />
+              <Faq data={data} />
             </Fade>
           </Col>
           <Col lg={6} className="px-lg-5">

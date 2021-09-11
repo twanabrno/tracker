@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "DroidNaskh-Regular";
+    src: url(./Assets/fonts/DroidNaskh-Regular.ttf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&family=Signika:wght@600&family=Ubuntu&display=swap');
 
+html,
+body{
+    width: 100% !important ;
+    overflow-x: hidden;
+}
 @media screen and (max-width: 600px) {
     #features,
     #faq,
@@ -10,6 +19,11 @@
         width: 100% !important;
         margin: 0 !important;
         padding: 40px 20px 10px!important;
+    }
+    #home,
+    #about,
+    .whychooseus{
+        width: 100% !important;
     }
     .nav-bar {
         margin-top: 18px !important;
@@ -37,7 +51,7 @@
     #whychooseus .whychooseus-bg{
         height: 350px;
     }
-    
+   
     #download .appgalleryCard,
     #download .androidCard,
     #download .iosCard {

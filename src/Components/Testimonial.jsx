@@ -23,7 +23,7 @@ const options = {
     0: {
       items: 1,
     },
-    600: {
+    900: {
       items: 3,
     },
   },
@@ -33,7 +33,7 @@ const Testimonial = () => {
   const { t } = useTranslation();
   return (
     <div id="testimonial">
-      <Container>
+      <Container dir='ltr'>
         <div className="header">
           <Fade>
             <img
@@ -41,8 +41,8 @@ const Testimonial = () => {
               src="https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/icon6.png"
               alt=""
             />
-            <h1 className='mb-1'>{t("testimons")}</h1>
-            <h1 className='mb-1'>{t("happy_client")}</h1>
+            <h3 className='mb-1'>{t("testimons")}</h3>
+            <h3 className='mb-2'>{t("happy_client")}</h3>
           </Fade>
           <Zoom>
             <div className=" d-flex justify-content-center mb-3">
@@ -51,7 +51,7 @@ const Testimonial = () => {
           </Zoom>
         </div>
         <OwlCarousel className="owl-theme mt-5" margin={10} {...options}>
-          <Slide right>
+          <Slide>
             <div className="item d-flex justify-content-center px-3">
               <div className="text-center">
                 <img

@@ -22,10 +22,10 @@ const About = () => {
             >
             <Fade>
               <div className="">
-                  <h2 className="about-header1 mt-5 mt-lg-0 mb-3">
+                  <h4 className="about-header1 mt-5 mt-lg-0 mb-3">
                     {t("welcome")}
-                  </h2>
-                  <h2 className="about-header2 mb-3 mb-md-4 ">{t("about_h")} </h2>
+                  </h4>
+                  <h4 className="about-header2 mb-3 mb-md-4 ">{t("about_h")} </h4>
                   <p className="about-p ">{t("about_p")}</p>
               </div>
                 </Fade>

@@ -12,14 +12,17 @@ const Features = () => {
       <Container>
         <div className="header text-center">
           <Fade>
-            <h1 className='mb-1'>{t("features")}</h1>
+            <h3 className='mb-1'>{t("features")}</h3>
           </Fade>
         </div>
         <Zoom>
-          <div className=" d-flex justify-content-center">
+          <div className=" d-flex justify-content-center mb-3">
             <hr className="hr" />
           </div>
         </Zoom>
+        <div className='text-center'>
+          <p className='text-secondary'>{t("features_p")}</p>
+        </div>
         <Row className="mt-5">
           <Col lg={6} className="mb-4">
             <Fade >
@@ -31,9 +34,8 @@ const Features = () => {
                       style={{ color: "#408858" }}
                     />
                   </Col>
-                  <Col className="text-center text-md-start">
-                    <h3>{t("feature_1")}</h3>
-                    <p className="lead">{t("feature_body_1")}</p>
+                  <Col className='d-flex align-items-center'>
+                    <h6 className='m-0' >{t("feature_1")}</h6>
                   </Col>
                 </Row>
               </div>
@@ -49,9 +51,8 @@ const Features = () => {
                       style={{ color: "#F73746" }}
                     />
                   </Col>
-                  <Col className="text-center text-md-start">
-                    <h3>{t("feature_2")}</h3>
-                    <p className="lead">{t("feature_body_2")}</p>
+                  <Col className='d-flex align-items-center'>
+                    <h6 className='m-0'>{t("feature_2")}</h6>
                   </Col>
                 </Row>
               </div>
@@ -67,9 +68,8 @@ const Features = () => {
                       style={{ color: "#F29C1F" }}
                     />
                   </Col>
-                  <Col className="text-center text-md-start">
-                    <h3>{t("feature_3")}</h3>
-                    <p className="lead">{t("feature_body_3")}</p>
+                  <Col className='d-flex align-items-center' >
+                    <h6 className='m-0'>{t("feature_3")}</h6>
                   </Col>
                 </Row>
               </div>
@@ -85,9 +85,8 @@ const Features = () => {
                       style={{ color: "#6DAF17" }}
                     />
                   </Col>
-                  <Col className="text-center text-md-start">
-                    <h3>{t("feature_4")}</h3>
-                    <p className="lead">{t("feature_body_4")}</p>
+                  <Col className='d-flex align-items-center'>
+                    <h6 className='m-0'>{t("feature_4")}</h6>
                   </Col>
                 </Row>
               </div>

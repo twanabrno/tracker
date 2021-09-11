@@ -22,7 +22,7 @@ const Subscribe = () => {
                       <img src={fly} className="img-fluid fly-img" alt="" />
                     </LightSpeed>
                     <Fade>
-                      <h2>{t("our_plan")}</h2>
+                      <h3>{t("our_plan")}</h3>
                     </Fade>
                   </Card.Title>
 

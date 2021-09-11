@@ -4,7 +4,6 @@
 
 .lang-btn {
     font-size: small;
-    padding: 1px 5px;
     background-color: unset;
     border: unset;
 }
@@ -16,31 +15,29 @@
 .lang-icon {
     width: 20px;
 }
-
-h1 {
-    font-family: "Cherry Swash";
-    text-transform: capitalize;
-}
-
+    
 h2 {
-    font-family: "Signika";
+    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
     margin-bottom: 10px;
-    font-weight: 600;
 }
 
 h3 {
-    font-family: "Signika";
+    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
+}
+
+h4 {
+    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
 }
 
 p {
-    font-family: 'Ubuntu' !important;
+    font-family: "DroidNaskh-Regular", 'Ubuntu' !important;
     line-height: 25px;
 }
 
 .hr {
     border: unset;
     background-color: var(--brandpurple) !important;
-    border-top: 4px solid var(--brandpurple);
+    border-top: 3px solid var(--brandpurple);
     width: 65px !important;
     margin: 0 !important;
     opacity: unset;
@@ -73,15 +70,22 @@ p {
 }
 
 .nav-bar .navlink {
-    font-family: "Signika";
-    font-size: 18px;
+    font-family: "DroidNaskh-Regular", "Signika";
+    font-size: 16px !important;
     text-transform: uppercase;
     margin: 0px 10px;
+    font-weight: 550 !important;
+    color: black !important;
+}
+
+.nav-bar .navlink:hover,
+.nav-bar .navlink.active {
+    color: var(--brandpurple) !important;
 }
 
 .nav-bar {
     margin-top: 30px;
-    padding: 5px 0 5px;
+    padding: 5px 0 3px;
     transition: all 0.4s;
     z-index: 100;
 }
@@ -91,7 +95,7 @@ p {
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
     border-radius: 5px;
 }
 
@@ -99,19 +103,16 @@ p {
     z-index: 1000 !important;
 }
 
-.download-btn,
-.subscribe-btn {
-    font-family: "signika";
+.download-btn {
+    font-family: "DroidNaskh-Regular", "signika";
     background-color: var(--brandpurple);
     border-color: var(--brandpurple);
     text-transform: uppercase;
-    font-weight: 600;
     transition: all 0.2s
 }
 
-.download-btn:hover,
-.subscribe-btn:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+.download-btn:hover {
+    background-color: transparent;
     border-color: var(--brandpurple);
     color: var(--brandpurple);
 }
@@ -132,12 +133,8 @@ p {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#home h1 {
-    font-size: 50px;
-}
-
 #home p {
-    font-size: 19px;
+    font-size: 17px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -199,11 +196,6 @@ p {
     font-size: 60px;
 }
 
-#features p {
-    font-size: 14px;
-    line-height: 20px;
-}
-
 /* testimonials */
 #testimonial {
     padding: 100px 0 20px;
@@ -233,8 +225,8 @@ p {
 }
 
 #testimonial span {
-    font-size: 17px;
-    font-family: 'signika';
+    font-size: 16px;
+    font-family: "DroidNaskh-Regular", 'signika';
     text-transform: uppercase;
 }
 
@@ -243,10 +235,6 @@ p {
     padding: 110px 0 75px;
     background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
     background-size: inherit;
-}
-
-#faq h1 {
-    font-family: "signika";
 }
 
 #faq .faq-title {
@@ -265,20 +253,16 @@ p {
 
 #faq .faq-row .row-content-text {
     font-size: 14px;
-    padding: 10px 10px;
+    padding-inline-start: 35px;
     text-transform: inherit;
     line-height: 20px;
-    font-family: "ubuntu" !important;
+    font-family: "DroidNaskh-Regular", "ubuntu" !important;
     padding-bottom: 20px;
 }
 
 #faq .row-title {
-    font-family: "signika";
+    font-family: "DroidNaskh-Regular", "signika";
     padding: 10px 10px;
-}
-
-#faq p {
-    margin-bottom: 0 !important;
 }
 
 /* Download */
@@ -287,17 +271,17 @@ p {
 }
 
 #download .d-icon {
-    font-size: 100px;
+    font-size: 85px;
     margin-bottom: 75px;
 }
 
 #download .appgalleryCard,
 #download .androidCard,
 #download .iosCard {
-    font-family: "signika";
+    font-family: "DroidNaskh-Regular", "signika";
     box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
     border-radius: 25px;
-    padding: 75px 0;
+    padding: 65px 0;
     margin: 0 25px;
     transition: all 0.2s;
 }
@@ -393,7 +377,7 @@ p {
 }
 
 #subscribe .card button {
-    font-family: "signika";
+    font-family: "DroidNaskh-Regular", "signika";
     padding: 10px 15px;
     background-color: var(--brandpurple);
     border-color: var(--brandpurple);
@@ -411,7 +395,7 @@ p {
 }
 
 #subscribe li {
-    font-family: 'ubuntu' !important;
+    font-family: "DroidNaskh-Regular", 'ubuntu' !important;
     font-size: 14px;
 }
 
@@ -425,13 +409,13 @@ p {
 }
 
 #subscribe .price {
-    font-family: "signika";
+    font-family: "DroidNaskh-Regular", "signika";
     margin: 30px 0 50px;
     font-size: 15px;
 }
 
 #subscribe .price span {
-    font-family: "Cherry Swash";
+    font-family: "DroidNaskh-Regular", "Cherry Swash";
     font-size: 30px;
 }
 
@@ -442,11 +426,15 @@ p {
     background-image: url(https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg14.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "ubuntu";
+    font-family: "DroidNaskh-Regular", "ubuntu";
+}
+
+#footer .logo {
+    height: 75px;
 }
 
 #footer .fotter-social {
-    margin: 15px;
+    margin: 30px 15px;
     padding: 12px;
     font-size: 50px;
     color: var(--brandpurple);

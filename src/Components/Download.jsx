@@ -14,7 +14,7 @@ const Download = () => {
       <Container>
         <div className="section-title">
           <Fade>
-            <h1>{t("download")}</h1>
+            <h3>{t("download")}</h3>
           </Fade>
           <Zoom>
             <div className=" d-flex justify-content-center">
@@ -31,7 +31,6 @@ const Download = () => {
                 </div>
                 <Button
                   variant="outline-primary"
-                  size="lg"
                   className="androidIcon"
                 >
                   {t("android")}
@@ -45,7 +44,7 @@ const Download = () => {
                 <div>
                   <AiFillApple className="d-icon" />
                 </div>
-                <Button variant="outline-primary" size="lg" className="iosIcon">
+                <Button variant="outline-primary" className="iosIcon">
                   {t("ios")}
                 </Button>
               </div>
@@ -59,7 +58,6 @@ const Download = () => {
                 </div>
                 <Button
                   variant="outline-primary"
-                  size="lg"
                   className="appgalleryIcon"
                 >
                   {t("app_gallery")}

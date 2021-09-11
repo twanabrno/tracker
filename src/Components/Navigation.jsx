@@ -5,7 +5,6 @@ import cookies from "js-cookie";
 import { Button, Dropdown, Container, Nav, Navbar } from "react-bootstrap";
 import { GrFacebook, GrInstagram } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa";
-import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 import logo from "../Assets/img/logo.jpg";
@@ -48,8 +47,8 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    changeBg();
     window.addEventListener("scroll", changeBg);
+    changeBg();
   });
 
   useEffect(() => {
@@ -60,8 +59,8 @@ const Navigation = () => {
   const btnLangs = (
     <>
       <Dropdown align={currentLanguage.dir ? "start" : "end"}>
-        <Dropdown.Toggle className="lang-btn" id="dropdown-basic">
-          <FaGlobe />
+        <Dropdown.Toggle className="lang-btn p-1" id="dropdown-basic">
+          <FaGlobe className="mx-1"/>
         </Dropdown.Toggle>
         <Dropdown.Menu className="dropdown ">
           <Dropdown.Item
@@ -136,13 +135,13 @@ const Navigation = () => {
         bg={navBg}
         collapseOnSelect
         expand="lg"
-        className={` ${navPt} fixed-top nav-bar`}
+        className={`${navPt} fixed-top nav-bar`}
       >
         <Container className="py-0 ">
             <Navbar.Brand href="#home" className="m-0">
                 <Fade>
                 <img className="img-fluid logo" src={logo} alt="" />
-                <span className="align-bottom mx-2 fs-3" style={{fontFamily:'Cherry Swash'}}>
+                <span className="align-bottom mx-3 fs-3" >
                   {t('app_title')}
                 </span>
                 </Fade>
