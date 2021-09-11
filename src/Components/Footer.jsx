@@ -6,7 +6,6 @@ import { FiInstagram } from "react-icons/fi";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
-import Pulse from "react-reveal/Pulse";
 import Zoom from "react-reveal/Zoom";
 
 import logo from "../Assets/img/logo.jpg";
@@ -19,22 +18,22 @@ const Footer = () => {
         <div className='d-flex align-items-end justify-content-start'>
         <img src={logo} className="logo img-fluid" alt="" />
         <span className="mb-2 mx-3">
-          <h2>
-            <Flip top cascade>
+          <h1 className='mb-0'>
+            <Flip top >
               {t("app_title")}
             </Flip>
-          </h2>
+          </h1>
           <Zoom>
             <hr className="hr" />
           </Zoom>
         </span>
         </div>
         <Row>
-          <Col lg={5} className="mb-5 mb-lg-0">
-            <Fade left cascade>
-              <p className="mt-3 mt-lg-5">{t("footer_p")}</p>
+          <Col lg={6} className="mb-5 mb-lg-0">
+            <Fade >
+              <p className="mt-4">{t("footer_p")}</p>
             </Fade>
-            <Zoom top>
+            <Fade  >
               <div className="mx-md-5">
                 <a href="/">
                   <FaFacebookF className="fotter-social" />
@@ -43,14 +42,13 @@ const Footer = () => {
                   <FiInstagram className="fotter-social" />
                 </a>
               </div>
-            </Zoom>
+            </Fade>
           </Col>
-          <Col lg={1}></Col>
-          <Col lg={2} xs={6} className="mb-5 mb-md-0 px-3">
-            <Pulse>
-              <h4>{t("usefull_links")}</h4>
-            </Pulse>
-            <ul className="list-unstyled mt-3 mt-lg-5">
+          <Col lg={2} xs={6} className="mb-1 mb-md-0 px-3">
+            <Fade>
+              <h3>{t("usefull_links")}</h3>
+            </Fade>
+            <ul className="list-unstyled mt-2">
               <li>
                 <a href="#home">{t("home")}</a>
               </li>
@@ -72,10 +70,10 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={4} xs={6} className="contact p-0">
-            <Pulse>
-              <h4>{t("have_questions")}</h4>
-            </Pulse>
-            <div className="mt-3 mt-lg-5">
+            <Fade>
+              <h3>{t("have_questions")}</h3>
+            </Fade>
+            <div className="mt-2">
               <MdEmail />
               <a href="mailto:example@ex.com">example@ex.com</a>
             </div>
@@ -85,7 +83,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-        <div className="text-center copy-right">&copy; {t("copy_right")}</div>
+        <div className="text-center text-capitalize copy-right">&copy; {t("copy_right")}</div>
       </Container>
     </div>
   );

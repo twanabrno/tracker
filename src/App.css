@@ -1,27 +1,7 @@
-@font-face {
-    font-family: "rudawregular2";
-    src: url(./Assets/fonts/rudawregular2.ttf);
-}
-
-@font-face {
-    font-family: "69_Sarchia_Omar";
-    src: url(./Assets/fonts/69_Sarchia_Omar.ttf);
-}
-
-@font-face {
-    font-family: "MolsaqArabicExtraBold";
-    src: url(./Assets/fonts/MolsaqArabicExtraBold.ttf);
-}
-
-html,
-body {
-    font-family: ""  !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&family=Signika:wght@600&family=Ubuntu&display=swap');
 
 @media screen and (max-width: 600px) {
-    #about,
     #features,
-    #whychooseus,
     #faq,
     #testimonial,
     #download,
@@ -29,7 +9,15 @@ body {
     #footer {
         width: 100% !important;
         margin: 0 !important;
-        padding: 40px 20px !important;
+        padding: 40px 20px 10px!important;
+    }
+    .nav-bar {
+        margin-top: 18px !important;
+        padding: 20px 0 8px !important;
+    }
+
+    .navbar-toggler {
+        font-size: 1rem !important;
     }
 
     #home h1 {
@@ -42,21 +30,14 @@ body {
         padding-bottom: 100px !important;
     }
 
-    .nav-bar {
-        margin-top: 18px !important;
-        padding: 20px 0 8px !important;
+    #about{
+        padding:15px 0 20px  !important ;
     }
-
-    .navbar-toggler {
-        font-size: 1rem !important;
+    #about .about-bg,
+    #whychooseus .whychooseus-bg{
+        height: 350px;
     }
-    .background{
-        background-size: auto  150%  !important;
-    }
-    #download {
-        background-size: 300% 100% !important;
-    }
-
+    
     #download .appgalleryCard,
     #download .androidCard,
     #download .iosCard {
@@ -64,20 +45,6 @@ body {
         margin: 0 !important;
     }
 
-    #subscribe .email-input {
-        width: 240px !important;
-    }
-
-    #subscribe .subscribe-btn {
-        font-size: 13px;
-        width: 90px !important;
-    }
-    #footer{
-        padding-bottom: 10px !important;
-    }
-    #footer .fotter-social {
-        margin: 30px 20px !important;
-    }
 }
 
 @media (max-width: 991px) {
@@ -95,8 +62,9 @@ body {
     #home h1 {
         font-size: 40px !important;
     }
-    .background{
-        background-size: auto  150%  !important;
+    
+    #testimonial .item {
+        margin: 0px !important;
     }
 
     #download .appgalleryCard,

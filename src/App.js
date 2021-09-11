@@ -10,13 +10,11 @@ import Testimonial from "./Components/Testimonial";
 import Footer from "./Components/Footer";
 import Subscribe from "./Components/Subscribe";
 import Download from "./Components/Download";
-import Fade from "react-reveal/Fade";
 
 function App() {
   return (
     <>
       <Navigation />
-      <Fade duration={2000}>
         <Home />
         <About />
         <Features />
@@ -25,7 +23,6 @@ function App() {
         <Download />
         <Subscribe />
         <Footer />
-      </Fade>
     </>
   );
 }

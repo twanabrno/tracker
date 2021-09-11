@@ -10,8 +10,8 @@ export default {
     home_title: "Lorem ipsum dolor",
     home_p:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam explicabo, sapiente provident quam pariatur officiis non, alias neque ullam harum facere adipisci rerum numquam, aliquid ad id possimus illum! Perspiciatis!",
-    welcome: "WELCOME TO HEALTH TRACKER",
-    about_h: "HELLO! HEALTH CARE IS A NATURAL WAY OF IMPROVING YOUR HEALTH",
+    welcome: "Welcome to health Tracker",
+    about_h: "Hello! Health care is a natural way of improving yoour health",
     about_p:
       "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
     whychooseus: "Why Choose Us?",
@@ -45,8 +45,8 @@ export default {
     a_7: "answer",
     q_8: "question",
     a_8: "answer",
-    testimons: "testimons",
-    happy_client: "HAPPY CLIENTS & FEEDBACKS",
+    testimons: "Testimons",
+    happy_client: "Happy Cllients & Feedbacks",
     feedback_1: "Lorem ispum dolor, sit amet consectetur adipisicing elit",
     client_1: "henry cavill",
     app_gallery: "App Gallery",
@@ -57,8 +57,8 @@ export default {
     plan_2: "dolor sit amet consectetur",
     plan_3: "dolor sit amet consectetur",
     plan_4: "dolor sit amet consectetur",
-    iqd: "iqd",
-    month: "month",
+    iqd: "IQD",
+    month: "Month",
     get_started: "get started",
     footer_p:
       "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",

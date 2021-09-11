@@ -1,9 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from "react-bootstrap";
-import Zoom from "react-reveal/Zoom";
-import Jump from "react-reveal/Jump";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import WhyChooseUs from "./WhyChooseUs";
 
 const About = () => {
@@ -14,34 +12,23 @@ const About = () => {
         <Container>
           <Row>
             <Col
-              md={4}
-              className="d-flex align-items-center justify-content-center"
+              md={6}
+              className="d-flex align-items-center justify-content-center about-bg"
             >
-              <Zoom>
-                <img
-                  className="img-fluid "
-                  src="https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg4.png"
-                  alt=""
-                />
-              </Zoom>
             </Col>
             <Col
-              md={8}
-              className="px-0 px-md-3 px-lg-5 d-flex align-items-center"
+              md={6}
+              className="px-md-3 px-lg-5 d-flex align-items-center"
             >
+            <Fade>
               <div className="">
-                <Jump>
-                  <h6 className="about-header1 mt-5 mt-lg-0 mb-3">
+                  <h2 className="about-header1 mt-5 mt-lg-0 mb-3">
                     {t("welcome")}
-                  </h6>
-                </Jump>
-                <Slide left cascade>
-                  <h3 className="about-header2 mb-3 mb-md-4 mb-lg-5">{t("about_h")} </h3>
-                </Slide>
-                <Zoom cascade>
+                  </h2>
+                  <h2 className="about-header2 mb-3 mb-md-4 ">{t("about_h")} </h2>
                   <p className="about-p ">{t("about_p")}</p>
-                </Zoom>
               </div>
+                </Fade>
             </Col>
           </Row>
         </Container>

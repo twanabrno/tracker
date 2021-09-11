@@ -117,10 +117,10 @@ const Navigation = () => {
     <>
       <div className="upperBar fixed-top">
         <Container className="upperBar">
-          <Zoom>
-            <div className="d-flex align-items-center justify-content-between">
+          <Fade>
+            <div className="d-flex align-items-center justify-content-between py-1">
               <div className="d-block d-md-inline social">
-                <a href="/" className="mx-3 ">
+                <a href="/" className="mx-3">
                   <GrFacebook />
                 </a>
                 <a href="/">
@@ -129,7 +129,7 @@ const Navigation = () => {
               </div>
               <div className="mx-3">{btnLangs}</div>
             </div>
-          </Zoom>
+          </Fade>
         </Container>
       </div>
       <Navbar
@@ -140,10 +140,12 @@ const Navigation = () => {
       >
         <Container className="py-0 ">
             <Navbar.Brand href="#home" className="m-0">
+                <Fade>
                 <img className="img-fluid logo" src={logo} alt="" />
-                <span className="align-bottom mx-2 text-uppercase fs-4 ">
+                <span className="align-bottom mx-2 fs-3" style={{fontFamily:'Cherry Swash'}}>
                   {t('app_title')}
                 </span>
+                </Fade>
             </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav p-0"/>
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -164,19 +166,19 @@ const Navigation = () => {
               </Fade>
             </Nav>
             <Nav>
-              <Fade right>
+              <Fade top>
                 <Button
                   href="#download"
                   className="download-btn btn btn-sm px-4 py-2 m-1"
                 >
                   {t("download")}
                 </Button>
-                <Button
+                {/* <Button
                   href="#subscribe"
                   className="subscribe-btn btn btn-sm px-4 py-2 m-1"
                 >
                   {t("submit")}
-                </Button>
+                </Button> */}
               </Fade>
             </Nav>
           </Navbar.Collapse>

@@ -2,8 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Col, Container, Row } from "react-bootstrap";
 import Faq from "react-faq-component";
-import Jump from "react-reveal/Jump";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 const FAQ = () => {
@@ -40,27 +39,27 @@ const FAQ = () => {
         <Row>
           <Col lg={6} className="px-lg-5">
             <div className="header mx-4">
-              <Jump>
-                <h2>FAQ</h2>
-              </Jump>
+              <Fade>
+                <h1 className='mb-1'>FAQ</h1>
+              </Fade>
               <Zoom>
                 <div className="mb-4">
                   <hr className="hr" />
                 </div>
               </Zoom>
             </div>
-            <Slide left>
+            <Fade >
               <Faq data={data_1} />
-            </Slide>
+            </Fade>
           </Col>
           <Col lg={6} className="px-lg-5">
-            <Slide right>
+            <Fade >
               <img
                 className="img-fluid"
                 src="https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg3.png"
                 alt=""
               />
-            </Slide>
+            </Fade>
           </Col>
         </Row>
       </Container>

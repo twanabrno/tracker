@@ -4,13 +4,8 @@ import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import { AiOutlineCheck } from "react-icons/ai";
 import fly from "../Assets/img/fly.png";
 import subscribe from "../Assets/img/subscribe.png";
-import Jump from "react-reveal/Jump";
-import Zoom from "react-reveal/Zoom";
-import Rotate from "react-reveal/Rotate";
+import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
-import Bounce from "react-reveal/Bounce";
-import RubberBand from "react-reveal/RubberBand";
-import HeadShake from "react-reveal/HeadShake";
 
 const Subscribe = () => {
   const { t } = useTranslation();
@@ -18,30 +13,22 @@ const Subscribe = () => {
     <div id="subscribe">
       <div className="overlay parallax_background parallax-window">
         <Container className="text-center">
-          <Jump>
-            <h2>{t("subscribe")}</h2>
-          </Jump>
-          <Zoom>
-            <div className=" d-flex justify-content-center mb-4">
-              <hr className="hr" />
-            </div>
-          </Zoom>
           <Row>
-            <Col lg={7} className="d-flex justify-content-center">
+            <Col lg={7}  className="d-flex justify-content-center">
               <Card style={{ width: "20rem" }}>
                 <Card.Body className="p-0 m-0">
                   <Card.Title className="text-center">
                     <LightSpeed left>
                       <img src={fly} className="img-fluid fly-img" alt="" />
                     </LightSpeed>
-                    <Jump>
-                      <h4>{t("our_plan")}</h4>
-                    </Jump>
+                    <Fade>
+                      <h2>{t("our_plan")}</h2>
+                    </Fade>
                   </Card.Title>
 
-                  <div className="p-3">
+                  <div className="p-1">
                     <ul className="list-unstyled px-3">
-                      <Bounce left cascade>
+                      <Fade>
                         <li>
                           <AiOutlineCheck className="mx-2" />
                           {t("plan_1")}
@@ -58,33 +45,33 @@ const Subscribe = () => {
                           <AiOutlineCheck className="mx-2" />
                           {t("plan_4")}
                         </li>
-                      </Bounce>
+                      </Fade>
                     </ul>
                   </div>
-                  <hr className="plan-hr" />
+                  <hr className="plan-hr mx-auto" />
                   <div className="price text-center">
-                    <RubberBand>
-                      <div className="mb-3">
+                    <Fade>
+                      <div className="mb-4">
                         <sup>{t("iqd")}</sup>
-                        <span>15,000</span>/{t("month")}
+                        <span className="mx-1">15,000</span>/{t("month")}
                       </div>
-                    </RubberBand>
-                    <HeadShake>
+                    </Fade>
+                    <Fade>
                       <Button>{t("get_started")}</Button>
-                    </HeadShake>
+                    </Fade>
                   </div>
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={5} className="d-flex justify-content-center text-center d-none d-lg-block">
+            <Col lg={5} className="d-flex justify-content-center text-center d-none d-lg-block">
               <div>
-                <Rotate top right>
+                <Fade>
                   <img
                     src={subscribe}
                     className="img-fluid subscribe-img"
                     alt=""
                   />
-                </Rotate>
+                </Fade>
               </div>
             </Col>
           </Row>

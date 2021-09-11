@@ -4,7 +4,6 @@ import { Col, Button, Container, Row } from "react-bootstrap";
 import { RiShoppingBagFill } from "react-icons/ri";
 import { DiAndroid } from "react-icons/di";
 import { AiFillApple } from "react-icons/ai";
-import Jump from "react-reveal/Jump";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
@@ -14,9 +13,9 @@ const Download = () => {
     <div id="download" className="text-center ">
       <Container>
         <div className="section-title">
-          <Jump>
-            <h2>{t("download")}</h2>
-          </Jump>
+          <Fade>
+            <h1>{t("download")}</h1>
+          </Fade>
           <Zoom>
             <div className=" d-flex justify-content-center">
               <hr className="hr" />
@@ -25,7 +24,7 @@ const Download = () => {
         </div>
         <Row className="pt-3 mt-5">
           <Col sm={4} className="mb-5">
-            <Fade left>
+            <Fade>
               <div className="androidCard">
                 <div>
                   <DiAndroid className="d-icon" style={{ color: "#6BDC85" }} />
@@ -41,7 +40,7 @@ const Download = () => {
             </Fade>
           </Col>
           <Col sm={4} className=" mb-5">
-            <Zoom>
+            <Fade>
               <div className="iosCard">
                 <div>
                   <AiFillApple className="d-icon" />
@@ -50,10 +49,10 @@ const Download = () => {
                   {t("ios")}
                 </Button>
               </div>
-            </Zoom>
+            </Fade>
           </Col>
           <Col sm={4} className="mb-5 ">
-            <Fade right>
+            <Fade>
               <div className="appgalleryCard">
                 <div className="text-danger">
                   <RiShoppingBagFill className="d-icon" />

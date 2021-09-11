@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
 const options = {
@@ -35,17 +35,17 @@ const Testimonial = () => {
     <div id="testimonial">
       <Container>
         <div className="header">
-          <Jump>
+          <Fade>
             <img
-              className="img-fluid mb-3"
+              className="img-fluid mb-2"
               src="https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/icon6.png"
               alt=""
             />
-            <h3 className="h3">{t("testimons")}</h3>
-            <h2>{t("happy_client")}</h2>
-          </Jump>
+            <h1 className='mb-1'>{t("testimons")}</h1>
+            <h1 className='mb-1'>{t("happy_client")}</h1>
+          </Fade>
           <Zoom>
-            <div className=" d-flex justify-content-center">
+            <div className=" d-flex justify-content-center mb-3">
               <hr className="hr" />
             </div>
           </Zoom>
