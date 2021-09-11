@@ -78,8 +78,7 @@ p {
     color: black !important;
 }
 
-.nav-bar .navlink:hover,
-.nav-bar .navlink.active {
+.nav-bar .navlink:hover {
     color: var(--brandpurple) !important;
 }
 
