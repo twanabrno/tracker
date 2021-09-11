@@ -1,6 +1,17 @@
 :root {
     --brandpurple: #418859;
 }
+.rtl-ff{
+    font-family: "DroidNaskh-Regular"
+}
+.h2-ff{
+    font-family: "Cherry+Swash"
+}
+
+.h3-ff,
+.h4-ff{
+    font-family: "Signika"
+}
 
 .lang-btn {
     font-size: small;
@@ -15,18 +26,18 @@
 .lang-icon {
     width: 20px;
 }
-    
+
 h2 {
-    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
+    font-family: "DroidNaskh-Regular", "Signika";
     margin-bottom: 10px;
 }
 
 h3 {
-    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
+    font-family: "DroidNaskh-Regular", "Signika";
 }
 
 h4 {
-    font-family: "DroidNaskh-Regular", "DroidNaskh-Regular", "Signika";
+    font-family: "DroidNaskh-Regular", "Signika";
 }
 
 p {
@@ -90,6 +101,11 @@ p {
     z-index: 100;
 }
 
+.navbar span{
+    font-family: "DroidNaskh-Regular", "Signika";
+}
+
+.whychooseus-bg
 .nav-shadow {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -247,17 +263,17 @@ p {
 }
 
 #faq .faq-row {
-    border: unset;
     margin-bottom: 9px;
 }
 
 #faq .faq-row .row-content-text {
     font-size: 14px;
+    padding: 5px;
     padding-inline-start: 35px;
     text-transform: inherit;
     line-height: 20px;
     font-family: "DroidNaskh-Regular", "ubuntu" !important;
-    padding-bottom: 20px;
+
 }
 
 #faq .row-title {
