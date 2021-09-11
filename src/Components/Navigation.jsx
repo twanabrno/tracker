@@ -141,7 +141,7 @@ const Navigation = () => {
             <Navbar.Brand href="#home" className="m-0">
                 <Fade>
                 <img className="img-fluid logo" src={logo} alt="" />
-                <span className="align-bottom mx-3 fs-3" >
+                <span className="align-bottom mx-3 mb-0 fs-3" >
                   {t('app_title')}
                 </span>
                 </Fade>
@@ -172,12 +172,6 @@ const Navigation = () => {
                 >
                   {t("download")}
                 </Button>
-                {/* <Button
-                  href="#subscribe"
-                  className="subscribe-btn btn btn-sm px-4 py-2 m-1"
-                >
-                  {t("submit")}
-                </Button> */}
               </Fade>
             </Nav>
           </Navbar.Collapse>

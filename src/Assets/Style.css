@@ -1,17 +1,6 @@
 :root {
     --brandpurple: #418859;
 }
-.rtl-ff{
-    font-family: "DroidNaskh-Regular"
-}
-.h2-ff{
-    font-family: "Cherry+Swash"
-}
-
-.h3-ff,
-.h4-ff{
-    font-family: "Signika"
-}
 
 .lang-btn {
     font-size: small;

@@ -14,7 +14,7 @@ const Home = () => {
           <Col lg={7} md={8}>
             <div md={8} className="intro-text text-center">
               <Fade>
-                <h2 className="mb-5">{t("home_title")}</h2>
+                <h2 className="mb-4">{t("home_title")}</h2>
                 <p>{t("home_p")}</p>
               </Fade>
             </div>
