@@ -7,7 +7,7 @@ import { GrFacebook, GrInstagram } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 
-import logo from "../Assets/img/logo.jpg";
+import logo from "../Assets/img/logo-brand.png";
 import kur from "../Assets/img/ku.svg";
 import ar from "../Assets/img/ar.svg";
 import en from "../Assets/img/en.svg";

@@ -7,7 +7,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 
-import logo from "../Assets/img/logo.jpg";
+import logo from "../Assets/img/logo-brand.png";
 
 const Footer = () => {
   const { t } = useTranslation();

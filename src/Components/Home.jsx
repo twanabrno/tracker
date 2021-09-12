@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div id="home">
       <div className="overlay">
-        <Container className="px-md-5" dir="ltr">
-          <Col lg={7} md={8}>
+        <Container className="px-md-5">
+          <Col>
             <div md={8} className="intro-text text-center">
               <Fade>
                 <h2 className="mb-4">{t("home_title")}</h2>
