@@ -7,7 +7,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 
-import logo from "../Assets/img/logo-brand.png";
+import logo from "../Assets/img/logo-brand.jpg";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const Footer = () => {
       <Container>
         <div className='d-flex align-items-end justify-content-start'>
         <img src={logo} className="logo img-fluid" alt="" />
-        <span className="mb-2 mx-3">
+        <span className="mb-1 mx-3">
           <h2 className='mb-0'>
             <Flip top >
               {t("app_title")}

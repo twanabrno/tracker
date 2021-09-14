@@ -7,7 +7,7 @@ import { GrFacebook, GrInstagram } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 
-import logo from "../Assets/img/logo-brand.png";
+import logo from "../Assets/img/logo-brand.jpg";
 import kur from "../Assets/img/ku.svg";
 import ar from "../Assets/img/ar.svg";
 import en from "../Assets/img/en.svg";
@@ -30,19 +30,16 @@ const languages = [
 ];
 
 const Navigation = () => {
-  const [navBg, setNavBg] = useState("");
   const [navPt, setNavPt] = useState("");
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation();
 
   const changeBg = () => {
-    if (window.scrollY >= 100) {
-      setNavBg("white");
+    if (window.scrollY >= 200) {
       setNavPt("nav-shadow");
     } else {
-      setNavBg("");
-      setNavPt("pt-4");
+      setNavPt("");
     }
   };
 
@@ -132,7 +129,7 @@ const Navigation = () => {
         </Container>
       </div>
       <Navbar
-        bg={navBg}
+        bg="white"
         collapseOnSelect
         expand="lg"
         className={`${navPt} fixed-top nav-bar`}
@@ -149,6 +146,8 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav p-0"/>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
+            </Nav>
+            <Nav className="d-flex align-items-end">
               <Fade top cascade>
                 <Nav.Link className="navlink" href="#home">
                   {t("home")}
@@ -163,12 +162,10 @@ const Navigation = () => {
                   {t("faq")}
                 </Nav.Link>
               </Fade>
-            </Nav>
-            <Nav>
               <Fade top>
                 <Button
                   href="#download"
-                  className="download-btn btn btn-sm px-4 py-2 m-1"
+                  className="download-btn m-1 mx-3"
                 >
                   {t("download")}
                 </Button>

@@ -12,9 +12,9 @@ const Home = () => {
       <div className="overlay">
         <Container className="px-md-5">
           <Col>
-            <div md={8} className="intro-text text-center">
+            <div className="intro-text text-center">
               <Fade>
-                <h2 className="mb-4">{t("home_title")}</h2>
+                <h1 className="mb-4">{t("home_title")}</h1>
                 <p>{t("home_p")}</p>
               </Fade>
             </div>

@@ -3,11 +3,44 @@
     src: url(./Assets/fonts/DroidNaskh-Regular.ttf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&family=Signika:wght@600&family=Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Mitr&display=swap');
 html,
 body{
     width: 100% !important ;
     overflow-x: hidden;
+}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    #home{
+        height: 700px !important;
+        background-position: bottom -1% center, center center !important;
+        background-repeat: no-repeat, no-repeat !important;
+        background-size: 105%, cover !important;
+        background-image: url(https://www.healthymealplans.com/static/images/landing-2020/hero-curve-bg.svg), url(https://www.healthymealplans.com/static/images/landing-2020/header-hero-sm@2x.png) !important;
+    }
+    #home .intro-text {
+        padding: 95px !important; 
+        padding-top: 200px !important;
+        padding-bottom: 100px !important;
+    }
+
+    #home h1 {
+        font-size: 40px !important;
+    }
+    
+    #testimonial .item {
+        margin: 0px !important;
+    }
+
+    #download .appgalleryCard,
+    #download .androidCard,
+    #download .iosCard {
+        margin: 0 !important;
+    }
 }
 @media screen and (max-width: 600px) {
     #features,
@@ -25,6 +58,7 @@ body{
     .whychooseus{
         width: 100% !important;
     }
+    
     .nav-bar {
         margin-top: 18px !important;
         padding: 20px 0 8px !important;
@@ -34,14 +68,22 @@ body{
         font-size: 1rem !important;
     }
 
+    #home{
+        height: 500px !important;
+        background-position: bottom -1% center, center center !important;
+        background-repeat: no-repeat, no-repeat !important;
+        background-size: 105%, cover !important;
+        background-image: url(https://www.healthymealplans.com/static/images/landing-2020/hero-curve-bg.svg), url(https://www.healthymealplans.com/static/images/landing-2020/header-hero-sm@2x.png) !important;
+    }
+
     #home h1 {
         font-size: 35px !important;
         margin-bottom: 35px !important;
     }
 
     #home .intro-text {
-        padding-top: 200px !important;
-        padding-bottom: 100px !important;
+        padding: 10px !important;
+        padding-top: 110px !important;
     }
 
     #about{
@@ -61,29 +103,3 @@ body{
 
 }
 
-@media (max-width: 991px) {
-    .navbar-collapse {
-        background-color: white;
-        padding: 10px;
-        margin-top: 5px;
-    }
-
-    #home .intro-text {
-        padding-top: 200px !important;
-        padding-bottom: 100px !important;
-    }
-
-    #home h1 {
-        font-size: 40px !important;
-    }
-    
-    #testimonial .item {
-        margin: 0px !important;
-    }
-
-    #download .appgalleryCard,
-    #download .androidCard,
-    #download .iosCard {
-        margin: 0 !important;
-    }
-}
